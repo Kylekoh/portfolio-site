@@ -1,0 +1,32 @@
+.tech-wrap {
+    width: 100%;
+    height: 600px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+.tech-text-container {
+    width: 100%;
+    height: 300px;
+    background-color: #7510F7;
+}
+
+.tech-text {
+    padding: 60px 96px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+
+    h1 {
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        color: white;
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        font-weight: 150;
+    }
+}
+

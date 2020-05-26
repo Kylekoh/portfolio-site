@@ -5,8 +5,14 @@ import portfolioStyles from './portfolio.module.scss';
 
 const Portfolio = () => {
     return (
-        <section id="portfolio">
-            <h1>Portfolio Section</h1>
+        <section id="portfolio" className={portfolioStyles.portfolioWrap}>
+            <div className={portfolioStyles.portfolioContainer}>
+                <div>
+                    <h3>My Portfolio</h3>
+                    <span>Here is my portfolio</span>
+                </div>
+                
+            </div>
         </section>
     )  
 }
