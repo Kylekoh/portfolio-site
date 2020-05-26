@@ -7,10 +7,28 @@ const Portfolio = () => {
     return (
         <section id="portfolio" className={portfolioStyles.portfolioWrap}>
             <div className={portfolioStyles.portfolioContainer}>
-                <div>
-                    <h3>My Portfolio</h3>
-                    <span>Here is my portfolio</span>
+                <div className={portfolioStyles.portfolioText}>
+                    <h1>My Portfolio</h1>
+                    <h2>Here is my portfolio</h2>
                 </div>
+                
+                <ul className={portfolioStyles.portfolioList}>
+                    <div className={portfolioStyles.portfolioItem}>
+                        <div className={portfolioStyles.portfolioContainer}>
+                            <img alt="" src=""></img>
+                        </div>
+                    </div>
+                    <div className={portfolioStyles.portfolioItem}>
+                        <div className={portfolioStyles.portfolioContainer}>
+                            <img alt="" src=""></img>
+                        </div>
+                    </div>
+                    <div className={portfolioStyles.portfolioItem}>
+                        <div className={portfolioStyles.portfolioContainer}>
+                            <img alt="" src=""></img>
+                        </div>
+                    </div>
+                </ul>
                 
             </div>
         </section>

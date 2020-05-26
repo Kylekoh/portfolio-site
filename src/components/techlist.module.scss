@@ -9,16 +9,20 @@
     top: -310px;
     width: 90%;
     text-align: middle;
-    color: #838C95;;
-    font-size: 1.5rem;
+    color: #636366;
+    font-size: 1.3rem;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    
     h1 {
+        letter-spacing: 3px;
+        text-transform: uppercase;
         min-width: 1200px;
         border-bottom: 0.1px dotted #ddd;
         min-height: 1rem;
         padding-bottom: 0.6rem;
         font-weight: 350;
+
     }
 }
 
@@ -59,8 +63,10 @@
     
 
     img {
-        width: 100px;
+        width: 93px;
         max-height: 70px;
+        display: flex;
+        justify-items: center;
     }
 }
 
@@ -69,6 +75,7 @@
 
     h3 {
         font-size: 1.4rem;
-        font-weight: 330;
+        font-weight: 340;
+        color: #636366;
     }
 }

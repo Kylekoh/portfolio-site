@@ -13,7 +13,7 @@ const TechList = () => {
                 <div className={techlistStyles.techItem}>
                     <div className={techlistStyles.techWrap}>
                         <div className={techlistStyles.imgContainer}>
-                            <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"></img>
+                            <img alt="HTML" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png"></img>
                         </div>
                         <div className={techlistStyles.textContainer}>
                             <h3>HTML</h3>
@@ -43,7 +43,7 @@ const TechList = () => {
                 <div className={techlistStyles.techItem}>
                     <div className={techlistStyles.techWrap}>
                         <div className={techlistStyles.imgContainer}>
-                            <img alt="" src="https://cdn.worldvectorlogo.com/logos/react.svg"></img>
+                            <img alt="" src="https://cdn.worldvectorlogo.com/logos/react-2.svg"></img>
                         </div>
                         <div className={techlistStyles.textContainer}>
                             <h3>React JS</h3>

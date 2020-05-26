@@ -7,43 +7,47 @@
     border-bottom: 1px solid #ddd;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .about-container {
     margin: 0 auto;
     max-width: 1020px;
-    width: 96%;
-    padding-top: 50px;
+    width: 100%;
+    padding-top: 20px;
     display: flex;
-    flex-direction: row;
-}
-
-.img-container {
-    width: 25%;
-    padding: 0 20px;
-    float: left;
-}
-
-.profile-pic {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    // border: 1px solid red;
-    border-radius: 10rem;
-    // background: url('../images/profile.jpeg') no-repeat center center;
+    flex-direction: column;
 }
 
 .text-container {
-    width: 75%;
-    
-    h2 {
-        font-size: 2.5rem;
-    }
+    margin-bottom: 50px;
 
-    p {
-        margin-top: 20px;
-        font-size: 1.4rem;
-        line-height: 1.9;
-        color:#838C95;
+    h1 {
+        font-size: 2.5rem;
+        color: #414a4f;
+        font-weight: 900;
     }
 }
+
+.img-container {
+    padding: 0 20px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+
+    p {
+        margin-left: 60px;
+        text-align: left;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #636366;
+        font-weight: 330;
+    }
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 10rem;
+}
+
