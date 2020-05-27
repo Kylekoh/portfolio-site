@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import Header from "../components/Header"
 import About from "../components/About"
@@ -9,16 +9,30 @@ import Footer from "../components/Footer"
 
 import "./layout.css"
 
+export const PortfolioContext = React.createContext()
+
 
 const Layout = () => {
+    const [firstModalState, setFirstModalState] = useState(false)
+    const [secondModalState, setSecondModalState] = useState(false)
+
+    const firstModalToggle = () => {
+        setFirstModalState(!firstModalState)
+    }
+
+    const secondModalToggle = () => {
+        setSecondModalState(!secondModalState)
+    }
     return (
     <>
-        <Header />
-        <About />
-        <Tech />
-        <TechList />
-        <Portfolio />
-        <Footer />
+        <PortfolioContext.Provider value={{ firstModalState, secondModalState, firstModalToggle, secondModalToggle }}>
+            <Header />
+            <About />
+            <Tech />
+            <TechList />
+            <Portfolio />
+            <Footer />
+        </PortfolioContext.Provider>
     </>
     )
 }
