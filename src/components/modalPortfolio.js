@@ -18,14 +18,11 @@ const ModalPortfolio = () => {
                     transition: "opacity 0.4s ease-in-out"
                 },
                 content: {
-                    // top: '120px',
-                    // bottom: '120px',
-                    // left: '250px',
-                    // right: '250px'
                     background: 'white',
                     width: '50%',
                     height: '85%',
-                    maxWidth: 'calc(100% - 60px)',
+                    maxWidth: '800px',
+                    maxHeight: '800px',
                     margin: 'auto',
                     padding: '0',
                     borderRadius: '0px',
@@ -34,7 +31,7 @@ const ModalPortfolio = () => {
                     border:'none' 
                 }
             }}>
-                <div className={modalPortfolioStyles.imageContainer}></div>
+                <div className={modalPortfolioStyles.firstImageContainer}></div>
                 <div className={modalPortfolioStyles.textContainer}>
                     <h1>Move Your Heart</h1>
                     <p>마음을 치료하는 상담사, 무브유어하트</p>
@@ -46,16 +43,45 @@ const ModalPortfolio = () => {
                        <li>완전반응형</li>
                        <li>완전반응형</li>
                     </ul>
+                    <FaTimes onClick={firstModalToggle} className={modalPortfolioStyles.closeModal} />
+                </div>
+            </Modal>
+            <Modal isOpen={secondModalState} onRequestClose={secondModalToggle} style={{
+                overlay: {
+                    backgroundColor: "gray",
+                    background: "rgba(0, 0, 0, 0.8)",
+                    transition: "opacity 0.4s ease-in-out"
+                },
+                content: {
+                    background: 'white',
+                    width: '50%',
+                    height: '85%',
+                    maxWidth: '800px',
+                    maxHeight: '800px',
+                    margin: 'auto',
+                    padding: '0',
+                    borderRadius: '0px',
+                    overflow: 'auto',
+                    WebkitOverflowScrolling: 'auto',
+                    border:'none' 
+                }
+            }}>
+                <div className={modalPortfolioStyles.secondImageContainer}></div>
+                <div className={modalPortfolioStyles.textContainer}>
+                    <h1>키워드 </h1>
+                    <p>마음을 치료하는 상담사, 무브유어하트</p>
+                    <ul className={modalPortfolioStyles.techList}>
+                       <li>완전반응형</li>
+                       <li>완전반응형</li>
+                       <li>완전반응형</li>
+                       <li>완전반응형</li>
+                       <li>완전반응형</li>
+                       <li>완전반응형</li>
+                    </ul>
                     <FaTimes onClick={secondModalToggle} className={modalPortfolioStyles.closeModal} />
                 </div>
-                
             </Modal>
-            <Modal isOpen={secondModalState} onRequestClose={secondModalToggle}>
-                <div className={modalPortfolioStyles.modalBackground}> 
-                    이거 보이나? 두번째
-                </div>
-                <FaTimes onClick={secondModalToggle} />
-            </Modal>
+
         </div>
     )
 }
