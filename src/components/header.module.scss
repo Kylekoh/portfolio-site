@@ -3,10 +3,11 @@
 .nav-wrap {
     letter-spacing: 2.5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #263443;
     min-height: 80px;
+    padding: 8px 12px;
 }
 
 .logo {
@@ -37,6 +38,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 0;
 }
 
 .nav-menu li {
@@ -47,6 +49,7 @@
         color: white;
         font-family: 'Noto Sans', sans-serif;
     }
+
     &:hover {
         color: #263443;
         background-color: sandybrown;
@@ -60,30 +63,34 @@
 .toggle-button {
     display: none;
     color: white;
-    // padding: 12px px;
     font-size: 20px;
     position: absolute;
-    right: 25px;
+    right: 32px;
+    top: 32px;
 }
 
 .toggle-show {
-    display: inline-block;
+    display: none;
 }
 
 @media screen and (max-width: 1000px) {
     .nav-wrap {
         flex-direction: column;
-        // justify-content: flex-start;
+        padding: 0;
+        width: 100%;
         align-items: flex-start;
+        justify-content: center;
     }
 
     .nav-menu {
-        display: none;
         width: 100%;
         align-self: center;
         flex-direction: column;
+
         li {
+            padding-left: 0;
             width: 100%;
+            margin: 0;
         }
     }
 
@@ -93,6 +100,6 @@
     }
 
     .toggle-button {
-        display: inline;
+        display: block;
     }
 }

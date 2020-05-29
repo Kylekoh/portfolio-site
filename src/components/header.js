@@ -9,7 +9,6 @@ const Header = () => {
 
     const handleToggle = () => {
         setMenuToggle(!menuToggle)
-        console.log(menuToggle)
     }
 
     return (
@@ -18,7 +17,7 @@ const Header = () => {
                     <FaKorvue/>
                     <span>Kyle's Portfoilo</span>
                 </div>
-                <ul id="nav" className={headerStyles.navMenu}>                
+                <ul className={`${headerStyles.navMenu} ${menuToggle ? `${headerStyles.toggleShow}` : ''}`}>                
                     <li>
                         <a href="#home">Home</a>
                     </li>
@@ -32,9 +31,9 @@ const Header = () => {
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
-                <div  onClick={handleToggle} className={`headerStyles.toggleButton  + menuToggle ? 'headerStyles.toggleShow' :''`}> 
+                <a  onClick={handleToggle} className={headerStyles.toggleButton}> 
                     <FaBars />
-                </div>
+                </a>
             </nav>
     )
 }
