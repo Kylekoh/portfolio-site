@@ -19,15 +19,17 @@ const Portfolio = () => {
                 </div>
                 <ul className={portfolioStyles.portfolioList}>
                     <div className={portfolioStyles.portfolioItem}>
-                        <button onClick={firstModalToggle}>첫번째 포트폴리오</button>
-                        <div className={portfolioStyles.portfolioContainer}>
-                            <img alt="" src=""></img>
+                        <div className={portfolioStyles.card}></div>
+                        <div className={portfolioStyles.text}>
+                            <div>Node JS</div>
+                            <p>This is fantastic</p>
                         </div>
+                        <div className={portfolioStyles.button}>더 알아보기</div>
                     </div>
                     <div className={portfolioStyles.portfolioItem}>
-                        <button onClick={secondModalToggle}>두번째 포트폴리오</button>
                         <div className={portfolioStyles.portfolioContainer}>
-                            <img alt="" src=""></img>
+                            <button onClick={secondModalToggle}>두번째 포트폴리오</button>
+                            <img alt="" src="https://images.unsplash.com/photo-1590541576391-dfc42314a7ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"></img>
                         </div>
                     </div>
                 </ul>

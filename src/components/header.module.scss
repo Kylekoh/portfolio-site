@@ -1,108 +1,98 @@
-.home {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    height: 1000px;
-    background-color: black;
-    text-align: center;
-    min-height: 500px;
-    background: #161415 url('../images/background2.jpg') no-repeat top center;
-    overflow: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 .nav-wrap {
-    width: 100%;
     letter-spacing: 2.5px;
-    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #263443;
+    min-height: 80px;
 }
 
-.nav-list {
-    min-height: 70px;
-    width: 100%;
-    list-style: none;
-    text-align: center;
-    background-color: rgba(0,0,0, 0.6);
-    width: auto;
-    list-style-type: none;
+.logo {
+    padding: 12px 30px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
 }
 
-.nav-item {
-    margin-right: 4rem;
+.logo svg {
+    font-size: 30px;
+    color: sandybrown;
+}
+
+.logo span {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
     color: white;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    text-decoration: none;
+}
+
+.nav-menu {
+    text-transform: uppercase;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-menu li {
+    padding: 12px 24px;
     
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Noto Sans', sans-serif;
+    }
     &:hover {
-        color: #7510F7;
+        color: #263443;
+        background-color: sandybrown;
         cursor: pointer;
         transition: all .2s ease-in-out;
         -webkit-transition: all .2s ease-in-out;
-        font-weight: 200;
+        border-radius: 4px;
     }
 }
 
-.banner {
-    
+.toggle-button {
+    display: none;
+    color: white;
+    // padding: 12px px;
+    font-size: 20px;
+    position: absolute;
+    right: 25px;
+}
+
+.toggle-show {
     display: inline-block;
-    position: relative;
-    top: 170px;
-    vertical-align: middle;
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    background-color:rgba(0,0,0, 0.6);
-    border-radius: 2em;
-    color: white;
-    max-height: 500px;
-    overflow: hidden;
 }
 
-.banner-text {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    h1 {
-        
-        font-size: 5rem;
+@media screen and (max-width: 1000px) {
+    .nav-wrap {
+        flex-direction: column;
+        // justify-content: flex-start;
+        align-items: flex-start;
     }
 
-    hr {
-        width: 60%;
-        margin: 18px auto 24px auto;
-        border-color: rgba(150, 150, 150, .5);
+    .nav-menu {
+        display: none;
+        width: 100%;
+        align-self: center;
+        flex-direction: column;
+        li {
+            width: 100%;
+        }
     }
 
-    h3 {
-        padding: 10px 80px;
-        font-size: 2rem;
-        font-weight: 200;
-        line-height: 1.6;
+    .nav-item {
+        display: block;
+        width: 100%;
     }
-}
 
-.social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 70%;
-    margin: 0 auto;
-    font-size: 40px;
-    text-align: center;
-    list-style-type: none;
-    color: white;
-
-    li a {
-        color: white;
-        padding-left: 1.5rem;
-    }  
+    .toggle-button {
+        display: inline;
+    }
 }
