@@ -1,9 +1,7 @@
 .about-wrap {
     background-color: white;
-    padding-top: 96px;
-    padding-bottom: 66px;
-    overflow: hidden;
-    height: 600px;
+    padding-top: 120px;
+    padding-bottom: 150px;
     border-bottom: 1px solid #ddd;
     width: 100%;
     margin: 0 auto;
@@ -13,7 +11,7 @@
 .about-container {
     margin: 0 auto;
     max-width: 1020px;
-    width: 100%;
+    width:90%;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -48,6 +46,16 @@
 .profile-pic {
     width: 160px;
     height: 160px;
-    border-radius: 10rem;
+    border-radius: 100px;
 }
 
+@media screen and (max-width: 800px) {
+    .img-container {
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            margin-top: 4rem;
+        }
+    }
+}
