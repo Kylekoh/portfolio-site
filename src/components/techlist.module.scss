@@ -2,8 +2,8 @@
     width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 200px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .tech-list-container {
@@ -24,7 +24,6 @@
     h1 {
         letter-spacing: 3px;
         text-transform: uppercase;
-        min-width: 1200px;
         border-bottom: 0.1px dotted #ddd;
         min-height: 1rem;
         padding-bottom: 0.6rem;
@@ -33,16 +32,16 @@
 }
 
 .tech-list {
-    padding: 24px 96px;
+    width: 90%;
+    padding-top: 26px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
     margin: 0 auto;
-    position: relative;
 }
 
 .tech-item {
-    width: 240px;
+    width: 13rem;
     background: white;
     border-radius: 1.5rem;
     display: flex;
@@ -79,5 +78,33 @@
         font-size: 1.4rem;
         font-weight: 340;
         color: #636366;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .tech-list {
+        grid-template-columns: repeat(4 , 1fr);
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .tech-title {
+        font-size: 1rem;
+    }
+    
+    .tech-list {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    
+    .text-container {
+        h3 {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 837px) {
+    .tech-list {
+        grid-template-columns: repeat(2 , 1fr);
     }
 }
