@@ -13,10 +13,10 @@ const Header = () => {
 
     return (
             <nav className={headerStyles.navWrap}>
-                <div className={headerStyles.logo}>
+                <a href="#home" className={headerStyles.logo}>
                     <FaKorvue/>
                     <span>Kyle's Portfoilo</span>
-                </div>
+                </a>
                 <ul className={`${headerStyles.navMenu} ${menuToggle ? `${headerStyles.toggleShow}` : ''}`}>                
                     <li>
                         <a href="#home">Home</a>
