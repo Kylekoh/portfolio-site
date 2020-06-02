@@ -11,24 +11,27 @@ const ModalPortfolio = () => {
     
     return (
         <div>
-            <Modal isOpen={firstModalState} onRequestClose={firstModalToggle} style={{
+            <Modal className={modalPortfolioStyles.modal} isOpen={firstModalState} onRequestClose={firstModalToggle} style={{
                 overlay: {
                     backgroundColor: "gray",
                     background: "rgba(0, 0, 0, 0.8)",
-                    transition: "opacity 0.4s ease-in-out"
+                    transition: "opacity 0.4s ease-in-out",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center"
                 },
                 content: {
-                    background: 'white',
-                    width: '50%',
-                    height: '85%',
-                    maxWidth: '800px',
-                    maxHeight: '800px',
-                    margin: 'auto',
-                    padding: '0',
-                    borderRadius: '0px',
-                    overflow: 'auto',
-                    WebkitOverflowScrolling: 'auto',
-                    border:'none'
+                    // background: 'white',
+                    // width: '50%',
+                    // height: '85%',
+                    // maxWidth: '800px',
+                    // maxHeight: '800px',
+                    // margin: '0 auto',
+                    // padding: '0',
+                    // borderRadius: '0px',
+                    // overflow: 'auto',
+                    // WebkitOverflowScrolling: 'auto',
+                    // border:'none'
                 }
             }}>
                 <div className={modalPortfolioStyles.firstImageContainer}></div>
@@ -47,7 +50,7 @@ const ModalPortfolio = () => {
                     <FaTimes onClick={firstModalToggle} className={modalPortfolioStyles.closeModal} />
                 </div>
             </Modal>
-            <Modal isOpen={secondModalState} onRequestClose={secondModalToggle} style={{
+            <Modal className={modalPortfolioStyles.modal} isOpen={secondModalState} onRequestClose={secondModalToggle} style={{
                 overlay: {
                     backgroundColor: "gray",
                     background: "rgba(0, 0, 0, 0.8)",

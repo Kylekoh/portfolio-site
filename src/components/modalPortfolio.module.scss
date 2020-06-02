@@ -1,3 +1,13 @@
+.modal {
+    background: white;
+    max-width: 600px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+}
+
 .first-image-container {
     display: block;
     width: 100%;
@@ -14,7 +24,7 @@
 
 .text-container {
     padding: 30px 50px;
-    // min-height: 330px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -67,9 +77,20 @@
 
 .close-modal {
     position: absolute;
-    right: 50px;
-    bottom: 50px;
+    right: 35px;
+    bottom: 35px;
     cursor: pointer;
     font-size: 20px;
     color: #636366;
 }
+
+@media screen and (max-width: 837px) {
+    .modal {
+        width: 450px;
+    }
+
+    .tech-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
