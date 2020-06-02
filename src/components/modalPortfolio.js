@@ -15,8 +15,7 @@ const ModalPortfolio = () => {
                 overlay: {
                     backgroundColor: "gray",
                     background: "rgba(0, 0, 0, 0.8)",
-                    transition: "opacity 0.4s ease-in-out",
-                    zIndex:'3'
+                    transition: "opacity 0.4s ease-in-out"
                 },
                 content: {
                     background: 'white',
@@ -29,8 +28,7 @@ const ModalPortfolio = () => {
                     borderRadius: '0px',
                     overflow: 'auto',
                     WebkitOverflowScrolling: 'auto',
-                    border:'none',
-                    zIndex:'3'
+                    border:'none'
                 }
             }}>
                 <div className={modalPortfolioStyles.firstImageContainer}></div>
@@ -45,6 +43,7 @@ const ModalPortfolio = () => {
                        <li>완전반응형</li>
                        <li>완전반응형</li>
                     </ul>
+                    <a href="https://www.moveurheart.com/"><button>사이트 방문하기</button></a>
                     <FaTimes onClick={firstModalToggle} className={modalPortfolioStyles.closeModal} />
                 </div>
             </Modal>
