@@ -19,17 +19,33 @@ const Portfolio = () => {
                 </div>
                 <ul className={portfolioStyles.portfolioList}>
                     <div className={portfolioStyles.portfolioItem}>
-                        <div className={portfolioStyles.card}></div>
-                        <div className={portfolioStyles.text}>
-                            <div>Node JS</div>
-                            <p>This is fantastic</p>
+                        <div className={portfolioStyles.portfolioImage}></div>
+                        <div className={portfolioStyles.textContainer}>
+                            <div className={portfolioStyles.text}>
+                                <h2>Move UR Heart</h2>
+                                <p>ReactJS/Responsive</p>
+                            </div>
+                            <button onClick={firstModalToggle} className={portfolioStyles.button}>더 알아보기</button>
                         </div>
-                        <div className={portfolioStyles.button}>더 알아보기</div>
                     </div>
                     <div className={portfolioStyles.portfolioItem}>
-                        <div className={portfolioStyles.portfolioContainer}>
-                            <button onClick={secondModalToggle}>두번째 포트폴리오</button>
-                            <img alt="" src="https://images.unsplash.com/photo-1590541576391-dfc42314a7ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"></img>
+                        <div className={portfolioStyles.portfolioImage}></div>
+                        <div className={portfolioStyles.textContainer}>
+                            <div className={portfolioStyles.text}>
+                                <h2>Move UR Heart</h2>
+                                <p>ReactJS/Responsive</p>
+                            </div>
+                            <button onClick={firstModalToggle} className={portfolioStyles.button}>더 알아보기</button>
+                        </div>
+                    </div>
+                    <div className={portfolioStyles.portfolioItem}>
+                        <div className={portfolioStyles.portfolioImage}></div>
+                        <div className={portfolioStyles.textContainer}>
+                            <div className={portfolioStyles.text}>
+                                <h2>Move UR Heart</h2>
+                                <p>ReactJS/Responsive</p>
+                            </div>
+                            <button onClick={firstModalToggle} className={portfolioStyles.button}>더 알아보기</button>
                         </div>
                     </div>
                 </ul>

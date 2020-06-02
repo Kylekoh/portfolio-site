@@ -8,7 +8,7 @@ import footerStyles from './footer.module.scss';
 
 const Footer = () => {
     return (
-        <section className={footerStyles.footerWrap}>
+        <section id='contact' className={footerStyles.footerWrap}>
             <p>저에 대해 더 알고싶다면?</p>
             <div className={footerStyles.socialIcons}>
                 <a href="https://www.instagram.com/koztwe/" className={footerStyles.socialButtons}>

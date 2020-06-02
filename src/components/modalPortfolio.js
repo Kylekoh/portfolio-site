@@ -15,7 +15,8 @@ const ModalPortfolio = () => {
                 overlay: {
                     backgroundColor: "gray",
                     background: "rgba(0, 0, 0, 0.8)",
-                    transition: "opacity 0.4s ease-in-out"
+                    transition: "opacity 0.4s ease-in-out",
+                    zIndex:'3'
                 },
                 content: {
                     background: 'white',
@@ -28,7 +29,8 @@ const ModalPortfolio = () => {
                     borderRadius: '0px',
                     overflow: 'auto',
                     WebkitOverflowScrolling: 'auto',
-                    border:'none' 
+                    border:'none',
+                    zIndex:'3'
                 }
             }}>
                 <div className={modalPortfolioStyles.firstImageContainer}></div>
@@ -50,7 +52,8 @@ const ModalPortfolio = () => {
                 overlay: {
                     backgroundColor: "gray",
                     background: "rgba(0, 0, 0, 0.8)",
-                    transition: "opacity 0.4s ease-in-out"
+                    transition: "opacity 0.4s ease-in-out",
+                    zIndex: "3"
                 },
                 content: {
                     background: 'white',
@@ -63,7 +66,8 @@ const ModalPortfolio = () => {
                     borderRadius: '0px',
                     overflow: 'auto',
                     WebkitOverflowScrolling: 'auto',
-                    border:'none' 
+                    border:'none',
+                    zIndex:'3'
                 }
             }}>
                 <div className={modalPortfolioStyles.secondImageContainer}></div>

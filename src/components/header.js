@@ -12,7 +12,7 @@ const Header = () => {
     }
 
     return (
-            <nav className={headerStyles.navWrap}>
+            <nav id="home" className={headerStyles.navWrap}>
                 <div className={headerStyles.navContainer}>
                     <a href="#home" className={headerStyles.logo}>
                         <FaKorvue/>
@@ -23,10 +23,10 @@ const Header = () => {
                             <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#skills">Skills</a>
                         </li>
                         <li>
-                            <a href="#works">Works</a>
+                            <a href="#portfolio">Portfolio</a>
                         </li>
                         <li>
                             <a href="#contact">Contact</a>

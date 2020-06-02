@@ -5,7 +5,7 @@ import techStyles from './tech.module.scss';
 
 const Tech = () => {
     return (
-        <section id="tech" className={techStyles.techWrap}>
+        <section id="skills" className={techStyles.techWrap}>
             <div className={techStyles.techTextContainer}>
                 <div className={techStyles.techText}>
                     <h1>My Skills</h1>
