@@ -23,7 +23,7 @@ const Portfolio = () => {
                         <div className={portfolioStyles.textContainer}>
                             <div className={portfolioStyles.text}>
                                 <h2>Move UR Heart</h2>
-                                <p>ReactJS/Responsive</p>
+                                <p>ReactJS / Responsive</p>
                             </div>
                             <button onClick={firstModalToggle} className={portfolioStyles.button}>더 알아보기</button>
                         </div>
