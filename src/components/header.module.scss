@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 .nav-wrap {
     width: 100%;
     background-color: #263443;
+    position: sticky;
     padding-top: 18px;
     padding-bottom: 18px;
+    z-index: 2;
 }
 
 .nav-container {
@@ -30,12 +32,13 @@
 }
 
 .logo span {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Special Elite', cursive;
     font-size: 20px;
     margin-left: 20px;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
+    padding-top: 5px;
 }
 
 .nav-menu {
@@ -50,11 +53,12 @@
 
 .nav-menu li {
     padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
     
     a {
         text-decoration: none;
         color: white;
-        font-family: 'Noto Sans', sans-serif;
     }
 
     &:hover {
@@ -88,9 +92,10 @@
     }
 
     .nav-menu {
-        width: 100%;
+        // width: 100%;
         align-self: center;
         flex-direction: column;
+        // display: none;
 
         li {
             padding-left: 0;
@@ -101,7 +106,6 @@
     }
 
     .nav-item {
-        display: block;
         width: 100%;
     }
 

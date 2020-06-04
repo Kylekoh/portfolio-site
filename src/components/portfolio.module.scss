@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+
 .portfolio-wrap {
     width: 100%;
     max-width: 1600px;
@@ -15,14 +18,16 @@
         color: #414a4f;
         font-size: 2.5rem;
         font-weight: 900;
+        letter-spacing: 2px;
     }
 
-    h2 {
+    p {
         color: #636366;
         margin-top: 2rem;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: 330;
         line-height: 1.5;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 }
 

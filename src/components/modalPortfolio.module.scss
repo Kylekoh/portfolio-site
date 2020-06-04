@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
 .modal {
     background: white;
     max-width: 600px;
@@ -42,6 +44,7 @@
         color: #636366;
         font-size: 11pt;
         font-weight: 300;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 
     button {
@@ -51,7 +54,7 @@
         color: white;
         background-color: #263443;
         font-size: 1.2rem;
-        font-weight: 350;
+        font-weight: 300;
         outline: none;
         cursor: pointer;
 
@@ -69,6 +72,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 15px;
     list-style-type: none;
+    font-family: 'Noto Sans KR', sans-serif;
 
     li {
         text-align: left;

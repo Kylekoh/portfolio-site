@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
 .about-wrap {
-    background-color: white;
-    padding-top: 120px;
-    padding-bottom: 150px;
+    min-height: 600px;
+    background-color: white; 
     border-bottom: 1px solid #ddd;
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-container {
@@ -23,7 +27,8 @@
     h1 {
         font-size: 2.5rem;
         color: #414a4f;
-        font-weight: 900;
+        font-weight: bold;
+        letter-spacing: 2px;
     }
 }
 
@@ -36,10 +41,11 @@
     p {
         margin-left: 60px;
         text-align: left;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         line-height: 1.5;
         color: #636366;
-        font-weight: 330;
+        font-weight: 500;
+        font-family: 'Noto Sans KR', sans-serif;
     }
 }
 
@@ -55,6 +61,7 @@
         align-items: center;
 
         p {
+            font-size: 1.1rem;
             margin-top: 4rem;
             margin-left: 0;
         }

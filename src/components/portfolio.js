@@ -14,8 +14,8 @@ const Portfolio = () => {
         <section id="portfolio" className={portfolioStyles.portfolioWrap}>
             <div className={portfolioStyles.portfolioContainer}>
                 <div className={portfolioStyles.portfolioText}>
-                    <h1>My Portfolio</h1>
-                    <h2>Here is my portfolio</h2>
+                    <h1>PORTFOLIO</h1>
+                    <p>Here is my portfolio</p>
                 </div>
                 <ul className={portfolioStyles.portfolioList}>
                     <div className={portfolioStyles.portfolioItem}>

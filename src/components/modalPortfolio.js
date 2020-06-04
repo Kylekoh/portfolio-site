@@ -18,20 +18,8 @@ const ModalPortfolio = () => {
                     transition: "opacity 0.4s ease-in-out",
                     display: "flex",
                     justifyContent: "center",
-                    alignItems: "center"
-                },
-                content: {
-                    // background: 'white',
-                    // width: '50%',
-                    // height: '85%',
-                    // maxWidth: '800px',
-                    // maxHeight: '800px',
-                    // margin: '0 auto',
-                    // padding: '0',
-                    // borderRadius: '0px',
-                    // overflow: 'auto',
-                    // WebkitOverflowScrolling: 'auto',
-                    // border:'none'
+                    alignItems: "center",
+                    zIndex:"3"
                 }
             }}>
                 <div className={modalPortfolioStyles.firstImageContainer}></div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
 .footer-wrap {
     height: 300px;
     background-color: #263443;
@@ -5,8 +7,12 @@
     font-size: 1.4rem;
     text-align: center;
     padding: 100px 96px;
-}
 
+    p {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    
+}
 
 .social-icons {
     width: 100%;
@@ -18,6 +24,7 @@
 }
 
 .social-buttons {
+    // padding-top: 5px;
     color: white;
     font-size: 1.5rem;
     background-color: transparent;
@@ -31,6 +38,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+
+    span {
+        position: absolute;
+        top: 15px;
+    }
 
     &:hover {
         color: #263443;
