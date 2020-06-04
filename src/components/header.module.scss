@@ -78,10 +78,7 @@
     position: absolute;
     right: 32px;
     top: 34px;
-}
-
-.toggle-show {
-    display: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
@@ -92,10 +89,10 @@
     }
 
     .nav-menu {
-        // width: 100%;
+        width: 100%;
         align-self: center;
         flex-direction: column;
-        // display: none;
+        display: none;
 
         li {
             padding-left: 0;
@@ -110,6 +107,10 @@
     }
 
     .toggle-button {
+        display: block;
+    }
+
+    .toggle-show {
         display: block;
     }
 }

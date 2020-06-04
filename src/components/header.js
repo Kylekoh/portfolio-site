@@ -11,6 +11,10 @@ const Header = () => {
         setMenuToggle(!menuToggle)
     }
 
+    // handleMenuBar = () => {
+        
+    // }
+
     return (
             <nav id="home" className={headerStyles.navWrap}>
                 <div className={headerStyles.navContainer}>
