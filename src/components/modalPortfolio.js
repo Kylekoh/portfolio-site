@@ -35,31 +35,33 @@ const ModalPortfolio = () => {
       >
         <div className={modalPortfolioStyles.firstImageContainer}></div>
         <div className={modalPortfolioStyles.textContainer}>
-          <h1>Football-Stat</h1>
-          <p>API 호출 기능 개발</p>
+          <div className={modalPortfolioStyles.textHeader}>
+            <h1>Football-Stat</h1>
+            <p>- 해외축구 각 리그별 순위 및 팀별 데이터를 제공하는 웹사이트</p>
+            <p>- Redux, React Hooks를 활용한 데이터 상태 관리</p>
+            <p>- Redux, Redux-Thunk를 통한 API 호출 기능 개발</p>
+            <p>- API-FOOTBALL API 활용</p>
+            <p>- Material UI의 테이블 디자인 적용</p>
+          </div>
           <ul className={modalPortfolioStyles.techList}>
-            <li>
-              <span>React</span>
-            </li>
-            <li>
-              <span>React Hooks</span>
-            </li>
-            <li>
-              <span>Redux</span>
-            </li>
-            <li>
-              <span>Redux-Thunk</span>
-            </li>
-            <li>
-              <span>Styled-Components</span>
-            </li>
+            <li>React</li>
+            <li>React Hooks</li>
+            <li>Redux</li>
+            <li>Redux-Thunk</li>
+            <li>CSS-in-JS</li>
           </ul>
-          <a target="_blank" href="https://kylekoh.github.io/football-stat/">
-            <button>사이트 방문하기</button>
-          </a>
-          <a target="_blank" href="https://kylekoh.github.io/football-stat/">
-            <button>소스코드</button>
-          </a>
+          <div className={modalPortfolioStyles.siteButton}>
+            <a target="_blank" href="https://kylekoh.github.io/football-stat/">
+              <button>사이트 방문하기</button>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/Kylekoh/football-stat"
+              className={modalPortfolioStyles.codeButton}
+            >
+              <button>소스코드</button>
+            </a>
+          </div>
           <FaTimes
             onClick={firstModalToggle}
             className={modalPortfolioStyles.closeModal}
@@ -84,30 +86,32 @@ const ModalPortfolio = () => {
       >
         <div className={modalPortfolioStyles.secondImageContainer}></div>
         <div className={modalPortfolioStyles.textContainer}>
-          <h1>Football-Stat</h1>
-          <p>API 호출 기능 개발</p>
+          <div className={modalPortfolioStyles.textHeader}>
+            <h1>Keyword Collector</h1>
+            <p>
+              - 키워드별 검색량, 성별검색비율, 컨텐츠 발행량, 연령별 검색비율,
+              월별검색동향 등의 데이터 제공
+            </p>
+            <p>- Electron기반의 데스크탑 어플리케이션</p>
+            <p>- Frontend - ReactJS /Backend - NodeJS</p>
+            <p>- 네이버 검색 API, 데이터 크롤링 활용</p>
+          </div>
           <ul className={modalPortfolioStyles.techList}>
-            <li>
-              <span>React</span>
-            </li>
-            <li>
-              <span>React Hooks</span>
-            </li>
-            <li>
-              <span>Redux</span>
-            </li>
-            <li>
-              <span>Redux-Thunk</span>
-            </li>
-            <li>
-              <span>Styled-Components</span>
-            </li>
+            <li>React</li>
+            <li>NodeJS</li>
+            <li>Express</li>
+            <li>Electron</li>
+            <li>크롤링</li>
           </ul>
-          <a target="_blank" href="https://kylekoh.github.io/football-stat/">
-            <button>사이트 방문하기</button>
+
+          <a
+            target="_blank"
+            href="https://github.com/Kylekoh/keyword_collector"
+          >
+            <button>소스코드 보기</button>
           </a>
           <FaTimes
-            onClick={firstModalToggle}
+            onClick={secondModalToggle}
             className={modalPortfolioStyles.closeModal}
           />
         </div>
@@ -130,24 +134,30 @@ const ModalPortfolio = () => {
       >
         <div className={modalPortfolioStyles.thirdImageContainer}></div>
         <div className={modalPortfolioStyles.textContainer}>
-          <h1>Move Your Heart</h1>
-          <p>예술심리치유센터 무브유어하트 랜딩페이지</p>
+          <div className={modalPortfolioStyles.textHeader}>
+            <h1>Move Your Heart</h1>
+            <p>- 예술심리치유센터 무브유어하트 랜딩페이지</p>
+            <p>- 반응형 홈페이지, 웹사이트 최적화 적용</p>
+            <p>- 이미지 슬라이딩, 헤더 스크롤 이벤트 적용 </p>
+          </div>
           <ul className={modalPortfolioStyles.techList}>
-            <li>
-              <span>React</span>
-            </li>
-            <li>
-              <span>Responsive Design</span>
-            </li>
-            <li>
-              <span>웹페이지 최적화</span>
-            </li>
+            <li>React</li>
+            <li>반응형 디자인</li>
           </ul>
-          <a target="_blank" href="http://www.moveurheart.com/">
-            <button>사이트 방문하기</button>
-          </a>
+          <div className={modalPortfolioStyles.siteButton}>
+            <a target="_blank" href="http://www.moveurheart.com/">
+              <button>사이트 방문하기</button>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/Kylekoh/MoveURHeart"
+              className={modalPortfolioStyles.codeButton}
+            >
+              <button>소스코드 보기</button>
+            </a>
+          </div>
           <FaTimes
-            onClick={firstModalToggle}
+            onClick={thirdModalToggle}
             className={modalPortfolioStyles.closeModal}
           />
         </div>
