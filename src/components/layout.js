@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from "react"
 
 import Header from "../components/Header"
 import About from "../components/About"
@@ -11,30 +11,43 @@ import "./layout.css"
 
 export const PortfolioContext = React.createContext()
 
-
 const Layout = () => {
-    const [firstModalState, setFirstModalState] = useState(false)
-    const [secondModalState, setSecondModalState] = useState(false)
+  const [firstModalState, setFirstModalState] = useState(false)
+  const [secondModalState, setSecondModalState] = useState(false)
+  const [thirdModalState, setThirdModalState] = useState(false)
 
-    const firstModalToggle = () => {
-        setFirstModalState(!firstModalState)
-    }
+  const firstModalToggle = () => {
+    setFirstModalState(!firstModalState)
+  }
 
-    const secondModalToggle = () => {
-        setSecondModalState(!secondModalState)
-    }
-    return (
+  const secondModalToggle = () => {
+    setSecondModalState(!secondModalState)
+  }
+
+  const thirdModalToggle = () => {
+    setThirdModalState(!thirdModalState)
+  }
+  return (
     <>
-        <PortfolioContext.Provider value={{ firstModalState, secondModalState, firstModalToggle, secondModalToggle }}>
-            <Header />
-            <About />
-            <Tech />
-            <TechList />
-            <Portfolio />
-            <Footer />
-        </PortfolioContext.Provider>
+      <PortfolioContext.Provider
+        value={{
+          firstModalState,
+          secondModalState,
+          thirdModalState,
+          firstModalToggle,
+          secondModalToggle,
+          thirdModalToggle,
+        }}
+      >
+        <Header />
+        <About />
+        <Tech />
+        <TechList />
+        <Portfolio />
+        <Footer />
+      </PortfolioContext.Provider>
     </>
-    )
+  )
 }
 
 export default Layout
