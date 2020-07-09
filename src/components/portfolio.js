@@ -15,7 +15,6 @@ const Portfolio = () => {
       <div className={portfolioStyles.portfolioContainer}>
         <div className={portfolioStyles.portfolioText}>
           <h1>PORTFOLIO</h1>
-          <p>Here is my portfolio</p>
         </div>
         <ul className={portfolioStyles.portfolioList}>
           <div className={portfolioStyles.portfolioItem}>

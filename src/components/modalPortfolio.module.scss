@@ -100,11 +100,23 @@
 
 .site-button {
   display: flex;
-  flex-direction: row;
+  a {
+    button {
+      min-height: 52px;
+    }
+  }
 }
 
 .code-button {
   margin-left: 20px;
+  text-decoration: none;
+  button {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 0px 0px 0px 5px;
+    }
+  }
 }
 
 .close-modal {
@@ -122,6 +134,18 @@
   }
 
   .tech-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 0.9rem;
+  }
+  .site-button {
+    a {
+      button {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .close-modal {
+    font-size: 15px;
   }
 }

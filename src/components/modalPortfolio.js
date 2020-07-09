@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import Modal from "react-modal"
 import { PortfolioContext } from "../components/layout"
-import { FaTimes } from "react-icons/fa"
+import { FaTimes, FaGithub } from "react-icons/fa"
 
 import modalPortfolioStyles from "./modalPortfolio.module.scss"
 
@@ -37,11 +37,14 @@ const ModalPortfolio = () => {
         <div className={modalPortfolioStyles.textContainer}>
           <div className={modalPortfolioStyles.textHeader}>
             <h1>Football-Stat</h1>
-            <p>- 해외축구 각 리그별 순위 및 팀별 데이터를 제공하는 웹사이트</p>
-            <p>- Redux, React Hooks를 활용한 데이터 상태 관리</p>
-            <p>- Redux, Redux-Thunk를 통한 API 호출 기능 개발</p>
-            <p>- API-FOOTBALL API 활용</p>
-            <p>- Material UI의 테이블 디자인 적용</p>
+            <p>
+              - 해외축구 각 리그별 순위 및 팀별 정보 데이터를 제공하는 웹사이트
+              입니다
+            </p>
+            <p>- Redux, React Hooks를 활용하여 데이터 상태를 관리했습니다</p>
+            <p>- Redux, Redux-Thunk를 통한 API 호출 기능 개발하였습니다</p>
+            <p>- API-FOOTBALL의 API 데이터를 활용하였습니다</p>
+            <p>- 반응형 디자인, Material UI 테이블 디자인을 적용하였습니다</p>
           </div>
           <ul className={modalPortfolioStyles.techList}>
             <li>React</li>
@@ -59,7 +62,9 @@ const ModalPortfolio = () => {
               href="https://github.com/Kylekoh/football-stat"
               className={modalPortfolioStyles.codeButton}
             >
-              <button>소스코드</button>
+              <button>
+                <FaGithub /> <span>Github</span>
+              </button>
             </a>
           </div>
           <FaTimes
@@ -90,11 +95,15 @@ const ModalPortfolio = () => {
             <h1>Keyword Collector</h1>
             <p>
               - 키워드별 검색량, 성별검색비율, 컨텐츠 발행량, 연령별 검색비율,
-              월별검색동향 등의 데이터 제공
+              월별검색동향 등의 데이터를 제공합니다
             </p>
-            <p>- Electron기반의 데스크탑 어플리케이션</p>
-            <p>- Frontend - ReactJS /Backend - NodeJS</p>
-            <p>- 네이버 검색 API, 데이터 크롤링 활용</p>
+            <p>- Electron기반의 데스크탑 어플리케이션 입니다</p>
+            <p>
+              - 프로젝트를 위해 Frontend는 ReactJS, Backend는 NodeJS를
+              사용하였습니다.
+            </p>
+            <p>- 네이버 검색 API, 크롤링 활용하여 데이터를 수집하였습니다</p>
+            <p>- 데이터 grid 표현을 위해 ag-grid를 활용하였습니다.</p>
           </div>
           <ul className={modalPortfolioStyles.techList}>
             <li>React</li>
@@ -103,13 +112,16 @@ const ModalPortfolio = () => {
             <li>Electron</li>
             <li>크롤링</li>
           </ul>
-
-          <a
-            target="_blank"
-            href="https://github.com/Kylekoh/keyword_collector"
-          >
-            <button>소스코드 보기</button>
-          </a>
+          <div className={modalPortfolioStyles.siteButton}>
+            <a
+              target="_blank"
+              href="https://github.com/Kylekoh/keyword_collector"
+            >
+              <button>
+                <FaGithub /> <span>Github</span>
+              </button>
+            </a>
+          </div>
           <FaTimes
             onClick={secondModalToggle}
             className={modalPortfolioStyles.closeModal}
@@ -136,9 +148,9 @@ const ModalPortfolio = () => {
         <div className={modalPortfolioStyles.textContainer}>
           <div className={modalPortfolioStyles.textHeader}>
             <h1>Move Your Heart</h1>
-            <p>- 예술심리치유센터 무브유어하트 랜딩페이지</p>
-            <p>- 반응형 홈페이지, 웹사이트 최적화 적용</p>
-            <p>- 이미지 슬라이딩, 헤더 스크롤 이벤트 적용 </p>
+            <p>- 예술심리치유센터 무브유어하트 랜딩페이지입니다</p>
+            <p>- 반응형 홈페이지, 웹사이트 최적화를 적용하였습니다</p>
+            <p>- 이미지 슬라이딩, 헤더 스크롤 이벤트 적용하였습니다 </p>
           </div>
           <ul className={modalPortfolioStyles.techList}>
             <li>React</li>
@@ -153,7 +165,9 @@ const ModalPortfolio = () => {
               href="https://github.com/Kylekoh/MoveURHeart"
               className={modalPortfolioStyles.codeButton}
             >
-              <button>소스코드 보기</button>
+              <button>
+                <FaGithub /> <span>Github</span>
+              </button>
             </a>
           </div>
           <FaTimes
