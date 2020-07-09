@@ -1,7 +1,6 @@
 import React from "react"
 
 import {
-  FaFacebookF,
   FaGithub,
   FaInstagramSquare,
   FaLinkedin,
@@ -20,6 +19,7 @@ const Footer = () => {
           href="https://github.com/Kylekoh"
           className={footerStyles.socialButtons}
           target="_blank"
+          rel="noreferrer"
         >
           <span className={footerStyles.socialIconItem}>
             <FaGithub />
@@ -29,6 +29,7 @@ const Footer = () => {
           href="https://velog.io/@ko12ztwe"
           className={footerStyles.socialButtons}
           target="_blank"
+          rel="noreferrer"
         >
           <span className={footerStyles.socialIconItem}>
             <FaBlogger />
@@ -39,6 +40,7 @@ const Footer = () => {
           href="https://www.linkedin.com/in/kylekoh16/"
           className={footerStyles.socialButtons}
           target="_blank"
+          rel="noreferrer"
         >
           <span className={footerStyles.socialIconItem}>
             <FaLinkedin />
@@ -48,6 +50,7 @@ const Footer = () => {
           href="https://www.instagram.com/koztwe/"
           className={footerStyles.socialButtons}
           target="_blank"
+          rel="noreferrer"
         >
           <span className={footerStyles.socialIconItem}>
             <FaInstagramSquare />

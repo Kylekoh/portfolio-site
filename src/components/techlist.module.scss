@@ -17,7 +17,7 @@
   width: 90%;
   text-align: middle;
   color: #636366;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 0 auto;
   margin-top: 3rem;
 
@@ -33,39 +33,39 @@
 
 .tech-list {
   width: 90%;
-  padding-top: 26px;
+  padding-top: 10px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 15px;
+  grid-gap: 10px;
   margin: 0 auto;
 }
 
 .tech-item {
-  width: 13rem;
+  width: 10.5rem;
   background: white;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
-  height: 160px;
+  height: 130px;
   margin: 0 auto;
 }
 
 .tech-wrap {
-  padding: 5px 30px;
+  padding: 2px 12px;
 }
 
 .img-container {
-  height: 100px;
+  height: 90px;
   margin: auto auto;
   display: flex;
   align-items: center;
   justify-content: center;
 
   img {
-    width: 93px;
-    max-height: 70px;
+    width: 80px;
+    max-height: 55px;
     display: flex;
     justify-items: center;
   }
@@ -73,36 +73,28 @@
 
 .text-container {
   h3 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 340;
     color: #636366;
   }
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1150px) {
   .tech-list {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 786px) {
   .tech-title {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-
-  .tech-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .text-container {
-    h3 {
-      font-size: 1rem;
-    }
-  }
-}
-
-@media screen and (max-width: 837px) {
   .tech-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .text-container {
+    h3 {
+      font-size: 0.8rem;
+    }
   }
 }

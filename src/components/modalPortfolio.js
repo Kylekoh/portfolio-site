@@ -54,11 +54,16 @@ const ModalPortfolio = () => {
             <li>CSS-in-JS</li>
           </ul>
           <div className={modalPortfolioStyles.siteButton}>
-            <a target="_blank" href="https://kylekoh.github.io/football-stat/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://kylekoh.github.io/football-stat/"
+            >
               <button>사이트 방문하기</button>
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://github.com/Kylekoh/football-stat"
               className={modalPortfolioStyles.codeButton}
             >
@@ -115,6 +120,7 @@ const ModalPortfolio = () => {
           <div className={modalPortfolioStyles.siteButton}>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://github.com/Kylekoh/keyword_collector"
             >
               <button>
@@ -157,11 +163,16 @@ const ModalPortfolio = () => {
             <li>반응형 디자인</li>
           </ul>
           <div className={modalPortfolioStyles.siteButton}>
-            <a target="_blank" href="http://www.moveurheart.com/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="http://www.moveurheart.com/"
+            >
               <button>사이트 방문하기</button>
             </a>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://github.com/Kylekoh/MoveURHeart"
               className={modalPortfolioStyles.codeButton}
             >

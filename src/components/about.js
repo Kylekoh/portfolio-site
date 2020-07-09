@@ -13,6 +13,7 @@ const About = () => {
           <img
             className={aboutStyles.profilePic}
             src={require("../images/kyleKoh.png")}
+            alt="main"
           />
           <p>
             안녕하세요, <strong>프론트앤드 개발자 고영일</strong>입니다. <br />

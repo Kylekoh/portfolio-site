@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useContext } from "react"
 
 import ModalPortfolio from "../components/modalPortfolio"
 import portfolioStyles from "./portfolio.module.scss"
@@ -21,6 +21,7 @@ const Portfolio = () => {
             <img
               className={portfolioStyles.portfolioImage}
               src={require("../images/football-stat1.png")}
+              alt="project"
             />
             <div className={portfolioStyles.textContainer}>
               <div className={portfolioStyles.text}>
@@ -39,6 +40,7 @@ const Portfolio = () => {
             <img
               className={portfolioStyles.portfolioImage}
               src={require("../images/keyword-collector.png")}
+              alt="project"
             />
             <div className={portfolioStyles.textContainer}>
               <div className={portfolioStyles.text}>
@@ -57,6 +59,7 @@ const Portfolio = () => {
             <img
               className={portfolioStyles.portfolioImage}
               src={require("../images/move-your-heart.png")}
+              alt="project"
             />
             <div className={portfolioStyles.textContainer}>
               <div className={portfolioStyles.text}>

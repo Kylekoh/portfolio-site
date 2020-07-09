@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
 
+.modal-container {
+  width: 90%;
+}
+
 .modal {
   background: white;
   width: 800px;
@@ -80,6 +84,12 @@
 .text-header {
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  h1 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
 }
 
 .tech-list {
@@ -91,8 +101,9 @@
   font-family: "Noto Sans KR", sans-serif;
 
   li {
-    padding: 10px 5px;
+    padding: 10px 10px;
     border: 1px solid #444;
+    font-size: 0.9rem;
     font-weight: 500;
     text-align: center;
   }
@@ -100,9 +111,11 @@
 
 .site-button {
   display: flex;
+
   a {
     button {
-      min-height: 52px;
+      min-height: 50px;
+      font-size: 1rem;
     }
   }
 }

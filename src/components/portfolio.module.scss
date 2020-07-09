@@ -15,9 +15,9 @@
 
   h1 {
     color: #414a4f;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
   }
 
   p {
@@ -40,8 +40,8 @@
 
 .portfolio-item {
   width: 100%;
-  max-width: 450px;
-  height: 300px;
+  max-width: 400px;
+  height: 250px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
   margin: 0 auto;
   position: relative;
@@ -81,12 +81,12 @@
     text-align: center;
 
     h2 {
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: 300;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 300;
       color: sandybrown;
     }
@@ -95,8 +95,8 @@
   .button {
     width: 170px;
     margin-top: 30px;
-    padding: 12px 12px;
-    font-size: 13pt;
+    padding: 8px 8px;
+    font-size: 16px;
     color: sandybrown;
     background-color: #263443;
     text-align: center;
@@ -111,14 +111,17 @@
     }
   }
 }
-
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1200px) {
   .portfolio-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 786px) {
+  .portfolio-item {
+    width: 100%;
+    max-width: 360px;
+    height: 240px;
+  }
   .portfolio-list {
     grid-template-columns: repeat(1, 1fr);
   }

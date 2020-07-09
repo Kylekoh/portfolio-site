@@ -1,123 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
 
 .footer-wrap {
-    height: 300px;
-    background-color: #263443;
-    color: white;
-    font-size: 1.4rem;
-    text-align: center;
-    padding: 100px 96px;
+  height: 250px;
+  background-color: #263443;
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 100px 96px;
 
-    p {
-        font-family: 'Noto Sans KR', sans-serif;
-    }
-    
+  p {
+    font-family: "Noto Sans KR", sans-serif;
+  }
 }
 
 .social-icons {
-    width: 100%;
-    color: white;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 100%;
+  color: white;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .social-buttons {
-    color: white;
-    font-size: 1.5rem;
-    background-color: transparent;
-    border-radius: 100%;
-    height: 60px;
-    width: 60px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-    -webkit-box-pack: center;
-    margin: 0.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  color: white;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  -webkit-box-pack: center;
+  margin: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-    span {
-        position: absolute;
-        top: 15px;
-    }
+  span {
+    position: absolute;
+    top: 12px;
+  }
 
-    &:hover {
-        color: #263443;
-        background-color: white;
-        transition: all .2s ease-in-out;
-        -webkit-transition: all .2s ease-in-out;
-    } 
+  &:hover {
+    color: #263443;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+  }
 }
 
 .social-icon-item {
-
-    &:hover {
-        color: #263443;
-        background-color: white;
-    } 
+  &:hover {
+    color: #263443;
+    background-color: white;
+  }
 }
 
 .mail-wrap {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .mail-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    svg {
-        font-size: 2rem;
-    }
+  svg {
+    font-size: 2rem;
+  }
 
-
-    span {
-        margin-left: 1rem;
-    }
+  span {
+    margin-left: 1rem;
+  }
 }
 
 .right {
-    margin-top: 4rem;
-    font-size: 1.5rem;
+  margin-top: 4rem;
+  font-size: 1.5rem;
 
-    span {
-        font-size: 1.2rem;
-        font-weight: 100;
-        color: #a09ea2;
-    }
+  span {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #a09ea2;
+  }
 }
 
 @media screen and (max-width: 1125px) {
-    .footer-wrap {
-        font-size: 1.1rem;
+  .footer-wrap {
+    font-size: 1.1rem;
+  }
+
+  .social-buttons {
+    height: 45px;
+    width: 45px;
+
+    span {
+      top: 10px;
+      left: 12px;
+    }
+  }
+
+  .mail-container {
+    svg {
+      font-size: 1.6rem;
     }
 
-    .social-buttons {
-        height: 45px;
-        width: 45px;
-
-        span {
-            top:8px;
-            left: 10px;
-        }
+    span {
+      font-size: 1rem;
     }
+  }
 
-    .mail-container {    
-        svg {
-            font-size: 1.6rem;
-        }
-
-        span {
-            font-size: 1rem;
-        }
+  .right {
+    span {
+      font-size: 1rem;
     }
-
-    .right {
-        span {
-            font-size: 1rem;
-        }
-    }
+  }
 }
