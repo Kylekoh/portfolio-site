@@ -7,10 +7,11 @@
 .modal {
   background: white;
   width: 800px;
-  min-height: 600px;
+  min-height: 500px;
+  height: 95%;
   margin: 0 auto;
   padding: 0;
-  overflow: hidden;
+  overflow: auto;
   border: none;
 }
 

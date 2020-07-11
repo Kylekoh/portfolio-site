@@ -16,7 +16,7 @@ const ModalPortfolio = () => {
   } = useContext(PortfolioContext)
 
   return (
-    <div>
+    <div className={modalPortfolioStyles.modalContainer}>
       <Modal
         className={modalPortfolioStyles.modal}
         isOpen={firstModalState}
