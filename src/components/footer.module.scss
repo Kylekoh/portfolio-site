@@ -90,6 +90,7 @@
 @media screen and (max-width: 1125px) {
   .footer-wrap {
     font-size: 1.1rem;
+    padding: 80px 60px;
   }
 
   .social-buttons {
@@ -115,6 +116,19 @@
   .right {
     span {
       font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .social-buttons {
+    height: 35px;
+    width: 35px;
+    font-size: 1rem;
+
+    span {
+      top: 8px;
+      left: 10px;
     }
   }
 }
