@@ -41,13 +41,15 @@ const ModalPortfolio = () => {
               - 해외축구 각 리그별 순위 및 팀별 정보 데이터를 제공하는 웹사이트
               입니다
             </p>
+            <p>- 정적타입 언어인 Typescript를 활용하여 만들어졌습니다.</p>
             <p>- Redux, React Hooks를 활용하여 데이터 상태를 관리했습니다</p>
-            <p>- Redux, Redux-Thunk를 통한 API 호출 기능 개발하였습니다</p>
+            <p>- Redux-Thunk Middleware로 API 호출 기능 개발하였습니다</p>
             <p>- API-FOOTBALL의 API 데이터를 활용하였습니다</p>
             <p>- 반응형 디자인, Material UI 테이블 디자인을 적용하였습니다</p>
           </div>
           <ul className={modalPortfolioStyles.techList}>
             <li>React</li>
+            <li>Typesciprt</li>
             <li>React Hooks</li>
             <li>Redux</li>
             <li>Redux-Thunk</li>

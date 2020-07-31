@@ -26,7 +26,7 @@ const Portfolio = () => {
             <div className={portfolioStyles.textContainer}>
               <div className={portfolioStyles.text}>
                 <h2>Football-Stat</h2>
-                <p>React / Redux / React Hooks</p>
+                <p>React / Typescript / React Hooks / Redux</p>
               </div>
               <button
                 onClick={firstModalToggle}

@@ -52,6 +52,11 @@ const TechList = () => {
   ]
   const framework_lists = [
     {
+      title: "Typescript",
+      image:
+        "https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png",
+    },
+    {
       title: "Electron JS",
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/768px-Electron_Software_Framework_Logo.svg.png",
